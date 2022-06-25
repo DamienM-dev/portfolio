@@ -5,8 +5,21 @@
     padding: 0;
     font-family: 'Anek Malayalam', sans-serif;
 }
+/* -----------STYLE GENERAL----------- */
 body {
     font-size: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+p {
+    font-size: 1.4rem;
+}
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2rem;
 }
 
 /* -----------HEADER----------- */
@@ -20,27 +33,58 @@ li {
     list-style: none;
 }
 
+li:nth-child(1) {
+margin-right: 20px;
+}
+
 #list_contact {
     display: flex;
 }
 
-
+a:hover {
+    color: white;
+}
 /* -----------CONTAINER_MAIN----------- */
-
 #main_container{
     background-color: black;
     height: 100vh;
     width: 100vw;
     color: white;
+    overflow: hidden;
 }
 
-#article_main {
+article {
     margin: 0 150px;
 }
 #block_portfolio_main {
     display: flex;
+    align-items: center;
+    margin-top: 10%;
 }
-#diplome {
+#portfolio_main {
+    width: 60%;
+    margin-right: 40px
+}
+
+lottie-player {
+    height: auto;
+    width: 400px;
+}
+/* -----------CREATION----------- */
+#creation {
     height: 100vh;
     width: 100vw;
+    text-align: center;
+    overflow: hidden;
+}
+#article_creation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30vh;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.blocks_creation {
+border-radius: 10px;
+color: white;
 }
