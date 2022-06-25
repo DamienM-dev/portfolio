@@ -37,6 +37,9 @@ li {
 #article_main {
     margin: 0 150px;
 }
+#block_portfolio_main {
+    display: flex;
+}
 #diplome {
     height: 100vh;
     width: 100vw;
