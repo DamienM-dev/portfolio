@@ -71,6 +71,7 @@ lottie-player {
     width: 400px;
 }
 /* -----------CREATION----------- */
+
 #creation {
     height: 100vh;
     width: 100vw;
@@ -113,4 +114,28 @@ article#article_creation {
     position: absolute;
     top: 50%;
     left: 10%;
+}
+
+/* -----------TEMPLATE----------- */
+
+#main_template {
+    height: 100vh;
+    width: 100vw;
+}
+.picture_template {
+    background-color: pink;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -500;
+}
+#title_template {
+    margin-top: 20%
+}
+
+#presentation_template {
+    height: 100vh;
+    width: 100vw;
 }
