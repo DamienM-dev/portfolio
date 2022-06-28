@@ -6,6 +6,7 @@
     font-family: 'Anek Malayalam', sans-serif;
 }
 /* -----------STYLE GENERAL----------- */
+
 body {
     font-size: 20px;
 }
@@ -26,6 +27,21 @@ li {
 }
 article {
     margin: 0 150px;
+}
+
+/* -----------HERITAGE----------- */
+
+.bouton{
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+        &:hover {
+
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
 }
 
 /* -----------HEADER----------- */
@@ -55,6 +71,7 @@ header {
 
 
 /* -----------CONTAINER_MAIN----------- */
+
 #main_container{
     background-color: black;
     height: 100vh;
@@ -98,16 +115,7 @@ header {
     }
 
     a {
-    background-color: black;
-    color: white;
-    padding: 10px;
-
-        &:hover {
-
-            background-color: white;
-            color: black;
-            border: 1px solid black;
-        }
+    @extend .bouton;
     }
 
     article#article_creation {
@@ -158,11 +166,29 @@ header {
 
 
 #presentation_template {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     text-align: center;
 
     h2 {
         margin-top: 30px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        @extend .bouton;
+    }
+}
+
+/* -----------TEMPLATE----------- */
+
+footer {
+    border-top: 3px solid black;
+
+    p {
+        margin: 20px 150px;
     }
 }
