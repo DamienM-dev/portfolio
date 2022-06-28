@@ -130,6 +130,11 @@ header {
             position: relative;
             border-radius: 10px;
             color: white;
+            
+            &:nth-child(1){
+               background: url('../../images/dailyFresh.webp');
+               background-size: cover;
+            }
     
             h3 {
                 position: absolute;
@@ -150,16 +155,19 @@ header {
     width: 100vw;
 
     .picture_template {
-        background-color: pink;
+        background: url('../../images/points.png'), center url('../../images/dailyFresh.webp');
+        background-size: cover;
         height: 100vh;
         width: 100vw;
         position: absolute;
         top: 0;
         left: 0;
         z-index: -500;
+        overflow: hidden;
     }
-
+    
     #title_template {
+        color: white;
         margin-top: 20%
     }
 }
@@ -183,7 +191,7 @@ header {
     }
 }
 
-/* -----------TEMPLATE----------- */
+/* -----------FOOTER----------- */
 
 footer {
     border-top: 3px solid black;
