@@ -101,7 +101,7 @@ header {
 #block_portfolio_main {
     display: flex;
     align-items: center;
-    margin-top: 10%;
+    height: calc(100vh - 28px);
 
     #portfolio_main {
         width: 60%;
@@ -137,6 +137,14 @@ header {
     
         .blocks_creation {
             position: relative;
+            transition: all .3s;
+            color: #121212;
+            text-shadow: 0 0 15px #F5F5F5;
+
+            &:hover {
+                opacity: .5;
+                
+            }
             
             img {
                 width: 100%;
@@ -347,7 +355,7 @@ svg {
     position: relative;
 
     .block_card {
-        height: 23vh;
+        height: 25vh;
         width: 500px;
         position: absolute;
         text-align: center;
@@ -362,34 +370,56 @@ svg {
         background-color: #30475E;
         color: #F5F5F5;
 
-            p.p-border {
+        .p-border {
 
-                border-bottom: 1px solid #F05454;
-            }
-            
+            border-bottom: 1px solid #F05454;
+            width: 50%;
+            margin: 10px auto;
         }
-
+    }
+    
     #block_card_3{
         top: 580px;
-
-        }
         
-
-    #block_card_2{
-    top: 300px;
-    margin: 0 50%;
-    background-color: #F05454;
-    color: #121212;
     }
+    
+    
+    #block_card_2{
+        top: 300px;
+        margin: 0 50%;
+        background-color: #F05454;
+        color: #121212;
 
+        .p-border {
+
+            border-bottom: 1px solid #30475E;
+            width: 50%;
+            margin: 10px auto;
+        }
+    }
+    
     #vertical-line{
         border-left: 2px solid #000;
-        height: 100vh;
+        height: 84vh;
         margin: 0 20px;
         position: absolute;
         right: 50%;
-      }
+    }
+
+
 }
+
+#container_parcours{
+    position: relative;
+
+    aside#aside_parcours{
+        position: absolute;
+        bottom: -950px;
+        right: 50%;
+        transform: translate(50%);
+    }
+}
+
 
 
 
