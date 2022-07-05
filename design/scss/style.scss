@@ -110,7 +110,7 @@ header {
 
     lottie-player {
         height: auto;
-        width: 400px;
+        width: 20%;
     }
 }
 
@@ -159,6 +159,8 @@ header {
                 position: absolute;
                 top: 50%;
                 left: 10%;
+                color: #121212;
+                text-shadow: 0 0 15px #F5F5F5;
             }
         }
     }
@@ -417,6 +419,7 @@ svg {
         bottom: -950px;
         right: 50%;
         transform: translate(50%);
+
     }
 }
 
@@ -508,3 +511,37 @@ footer {
         margin: 20px 150px;
     }
 }
+#footer_main {
+    position: absolute;
+    bottom: -3050px;
+    width: 100%;
+}
+
+/* -----------RESPONSIVE DESIGN----------- */
+
+@media screen and (max-width: 950px) {
+
+    /* -----------CONTAINER_MAIN => RESPONSIVE ----------- */
+
+    #block_portfolio_main {
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            width: 100%;
+        }
+        lottie-player {
+            width: 30%;
+        }
+    }
+
+    /* -----------CREATION => RESPONSIVE ----------- */
+
+    article#article_creation {
+
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+
+    
+  }
+  
