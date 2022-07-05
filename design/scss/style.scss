@@ -89,7 +89,6 @@ header {
 #main_container, #competence{
     background-color: #121212;
     height: 100vh;
-    width: 100vw;
     color: #F5F5F5;
     overflow: hidden;
 
@@ -119,7 +118,6 @@ header {
 
 #creation {
     height: 100vh;
-    width: 100vw;
     text-align: center;
     overflow: hidden;
 
@@ -344,25 +342,55 @@ svg {
 
 /* -----------EXPERIENCE----------- */
 
-#article_experience {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding-top: 40px;
-    border-radius: 20px;
 
+#experiences {
+    position: relative;
 
-    .card_experience {
-        background-color: #121212;
-        color: #F5F5F5;
-        margin-top: 20px;
-        width: 30%;
-        height: 50%;
-
+    .block_card {
+        height: 23vh;
+        width: 500px;
+        position: absolute;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+    
     }
+
+    #block_card_1, #block_card_3 {
+        margin-top: 30px;
+        margin: 0 20.5%;
+        background-color: #30475E;
+        color: #F5F5F5;
+
+            p.p-border {
+
+                border-bottom: 1px solid #F05454;
+            }
+            
+        }
+
+    #block_card_3{
+        top: 580px;
+
+        }
+        
+
+    #block_card_2{
+    top: 300px;
+    margin: 0 50%;
+    background-color: #F05454;
+    color: #121212;
+    }
+
+    #vertical-line{
+        border-left: 2px solid #000;
+        height: 100vh;
+        margin: 0 20px;
+        position: absolute;
+        right: 50%;
+      }
 }
+
 
 
 
@@ -386,11 +414,11 @@ article#article_main {
 
 #main_template {
     height: 100vh;
-    width: 100vw;
+
 
     .picture_template {
         height: 100vh;
-        width: 100vw;
+      
         position: absolute;
         top: 0;
         left: 0;
@@ -430,7 +458,6 @@ article#article_main {
 
 #presentation_template {
     height: 50vh;
-    width: 100vw;
     text-align: center;
 
     p {
