@@ -433,6 +433,10 @@ svg {
 header.template {
     background-color: #121212;
     color: #F5F5F5;
+
+    li:nth-child(1) {
+        margin-left: 55px;
+    }
 }
 
 
@@ -481,10 +485,12 @@ article#article_main {
     /* -----------FIN BACKGROUND TEMPLATE----------- */
     
     #title_template {
-        background-color: #121212;
-        color: #F5F5F5;
-        margin-top: 20%;
+        background-color: #30475E;
+        color: #F05454;
         width: 525px;
+        transform: rotateZ(-50deg);
+        margin-left: -162px;
+        margin-top: 97px;
 
         p {
             text-align: center;
