@@ -24,7 +24,8 @@
                   
                     <div id="list_contact">
                         <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Contactez-moi</a></li>
+                        <li><a href="mail.php" >Contactez-moi</a></li>
+                       
                     </div>
                 </ul>
             </header>
@@ -49,14 +50,14 @@
             <div class= "blocks_creation">
                 <a href ="projets/html/daily.html" target="_blank">
                     <img src="images/dailyFresh.webp" alt="image représentant le site daily fresh">
-                    <h3>Daily Fresh</h3>
+                    <!-- <h3>Daily Fresh</h3> -->
                 </a>
             </div>
 
             <div class= "blocks_creation">
                 <a href="projets/html/bedboat.html" target="_blank">
                     <img src="images/bedboat.png" alt="image du site bedboat">
-                    <h3>Bedboat</h3>
+                    <!-- <h3>Bedboat</h3> -->
                 </a>
 
             </div>
@@ -72,7 +73,7 @@
         <aside>
             <h2>Contact</h2>
             <p>On travaille ensemble ?</p>
-            <a href="#">Envoyer un email</a>
+            <a href="mail.php">Envoyer un email</a>
 
         </aside>
 
@@ -257,7 +258,7 @@
         <aside>
             <h2>Contact</h2>
             <p>On travaille ensemble ?</p>
-            <a href="#">Envoyer un email</a>
+            <a href="mail.php">Envoyer un email</a>
 
         </aside>
     </div>
@@ -268,42 +269,48 @@
         <div id="experiences">
             <h2>Expériences</h2>
 
-            <span id="vertical-line"></span>
+            
 
-            <div id="container_cards">
+                <div id="vertical-line">
 
-                <div class="block_card" id="block_card_1">
-                    <h4> Septembre 2022 - Juin 2023</h4>
-                    <img src="images/suitecase.png" alt="image de malette">
-                    <h4>Formation CDA</h4>
-                    <p>Concepteur Développeur d'Application</p>
-                    <div class="p-border"></div>
-                    <p>java, react, symfony, swift (ios), flutter</p>
+                    <div id="container_cards">
+        
+                        <div class="block_card" id="block_card_1">
+                            <h4> Septembre 2022 - Juin 2023</h4>
+                            <img src="images/suitecase.png" alt="image de malette">
+                            <h4>Formation CDA</h4>
+                            <p>Concepteur Développeur d'Application</p>
+                            <div class="p-border"></div>
+                            <p>java, react, symfony, swift (ios), flutter</p>
+                        </div>
+            
+            
+                        <div class="block_card" id="block_card_2">
+            
+                            <h4>Avril 2022 - Juin 2022</h4>
+                            <img src="images/suitecase2.png" alt="image de malette">
+                            <h3>Bedboat</h3>
+                            <p>Stage développeur web fullstack</p>
+                            <div class="p-border"></div>
+                            <p>HTML, boostap, JS, symfony</p>
+            
+                        </div>
+            
+                        <div class="block_card" id="block_card_3">
+            
+                            <h4>Novembre 2021 - Juin 2022</h4>
+                            <img src="images/suitecase.png" alt="image de malette">
+                            <h3>Formation KERCODE</h3>
+                            <p>Développeur intégrateur en réalisation d'applications web</p>
+                            <div class="p-border"></div>
+                            <p>HTML, CSS, JS, PHP</p>
+            
+                        </div>
+                    </div>
                 </div>
     
-    
-                <div class="block_card" id="block_card_2">
-    
-                    <h4>Avril 2022 - Juin 2022</h4>
-                    <img src="images/suitecase2.png" alt="image de malette">
-                    <h3>Bedboat</h3>
-                    <p>Stage développeur web fullstack</p>
-                    <div class="p-border"></div>
-                    <p>HTML, boostap, JS, symfony</p>
-    
-                </div>
-    
-                <div class="block_card" id="block_card_3">
-    
-                    <h4>Novembre 2021 - Juin 2022</h4>
-                    <img src="images/suitecase.png" alt="image de malette">
-                    <h3>Formation KERCODE</h3>
-                    <p>Développeur intégrateur en réalisation d'applications web</p>
-                    <div class="p-border"></div>
-                    <p>HTML, CSS, JS, PHP</p>
-    
-                </div>
-            </div>
+         
+
 
             
         </div>
@@ -311,11 +318,18 @@
         <aside id="aside_parcours">
             <h2>Contact</h2>
             <p>On travaille ensemble ?</p>
-            <a href="#">Envoyer un email</a>
+            <a href="mail.php">Envoyer un email</a>
         </aside>
     </div>
     <footer id="footer_main">
-        <p>© MIREMONT damien</p>
+        <div class="footer_reseau">
+            <p>© MIREMONT damien</p>
+            <div class="reseau">
+                <a href="https://www.linkedin.com/in/damien-miremont/"><img src="images/linkedin.png"></a>
+                <a href="https://github.com/DamienM-dev?tab=repositories"><img src="images/github.png"></a>
+    
+            </div>
+        </div>
     </footer>
 
     <!-- partie footer -->

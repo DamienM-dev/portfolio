@@ -49,12 +49,14 @@ aside {
     background-color: #121212;
     color: #F5F5F5;
     padding: 10px;
+    border-radius: 5px;
 
         &:hover {
 
             background-color: #F5F5F5;
             color: #121212;
             border: 1px solid #121212;
+            transition-duration: 1s;
         }
 }
 
@@ -367,10 +369,10 @@ svg {
     }
 
     #block_card_1, #block_card_3 {
-        margin-top: 30px;
-        margin: 0 20.5%;
+        
         background-color: #30475E;
         color: #F5F5F5;
+        margin-left: -530px;
 
         .p-border {
 
@@ -388,7 +390,7 @@ svg {
     
     #block_card_2{
         top: 311px;
-        margin: 0 50%;
+        margin-left: 10px;
         background-color: #F05454;
         color: #121212;
 
@@ -409,6 +411,7 @@ svg {
     }
 
 
+
 }
 
 #container_parcours{
@@ -416,7 +419,7 @@ svg {
 
     aside#aside_parcours{
         position: absolute;
-        bottom: -950px;
+        bottom: -960px;
         right: 50%;
         transform: translate(50%);
 
@@ -511,6 +514,20 @@ article#article_main {
     a {
         @extend .bouton;
     }
+    a.more {
+        background-color: #30475E;
+        border-radius: 50px;
+
+        &:hover {
+            background-color:#F5F5F5;
+            color: #30475E;
+            border: 1px solid #30475E;
+            transition-duration: 1s;
+        }
+    }
+    span {
+        color: #F05454;
+    }
 }
 
 /* -----------FOOTER----------- */
@@ -520,6 +537,14 @@ footer {
 
     p {
         margin: 20px 150px;
+    }
+    .footer_reseau {
+        display: flex;
+        justify-content: space-between;
+    }
+    .reseau {
+        margin-top: 20px;
+        margin-right: 150px;
     }
 }
 #footer_main {
@@ -570,17 +595,31 @@ footer {
 
     /* -----------PARCOURS => RESPONSIVE ----------- */
 
-    #container_cards {
-
-        display: flex;
-        justify-content: center;
-    }
-
-
+    
     #vertical-line {
+        border-left: unset!important;
+        
+        #container_cards {
+    
+            display: flex;
+            justify-content: center;
+            
+            .block_card {
+                margin: auto;
+            }
+        
+            #block_card_2 {
+                top: 268px;
+            }
+        
+            #block_card_3 {
+                top: 537px;
+            }
+        }
 
-        display: none;
-    } 
+        }
+        
+    
 
     /* -----------FOOTER => RESPONSIVE ----------- */
 
@@ -635,9 +674,22 @@ footer {
     margin-top: 50px;
 }
 
-footer#footer_main {
-    bottom: -3530px;
+/* -----------COMPETENCE => RESPONSIVE ----------- */
+
+#container_parcours {
+
+    height: 100vh;
+
+    aside#aside_parcours {
+    
+        bottom: -30px;
+    }
+    
 }
+footer#footer_main {
+    bottom: -3590px;
+}
+
 
 
   }
