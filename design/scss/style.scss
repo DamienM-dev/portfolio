@@ -359,7 +359,7 @@ svg {
     position: relative;
 
     .block_card {
-        height: 25vh;
+        height: 22vh;
         width: 500px;
         position: absolute;
         text-align: center;
@@ -383,13 +383,13 @@ svg {
     }
     
     #block_card_3{
-        top: 580px;
+        top: 511px;
         
     }
     
     
     #block_card_2{
-        top: 311px;
+        top: 255px;
         margin-left: 10px;
         background-color: #F05454;
         color: #121212;
@@ -419,7 +419,7 @@ svg {
 
     aside#aside_parcours{
         position: absolute;
-        bottom: -960px;
+        bottom: -937px;
         right: 50%;
         transform: translate(50%);
 
@@ -609,15 +609,20 @@ footer {
             }
         
             #block_card_2 {
-                top: 268px;
+                top: 243px;
             }
         
             #block_card_3 {
-                top: 537px;
+                top: 487px;
             }
         }
 
-        }
+    }
+
+    #aside_parcours {
+       bottom: -880px!important;
+    }
+
         
     
 
@@ -682,7 +687,7 @@ footer {
 
     aside#aside_parcours {
     
-        bottom: -30px;
+        bottom: 50px!important;
     }
     
 }
