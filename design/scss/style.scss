@@ -12,6 +12,12 @@ body {
     font-size: 20px;
 }
 
+body, html, #container_principal{
+    height: 100%;
+}
+
+
+
 h1 {
     font-size: 3rem;
 }
@@ -283,6 +289,9 @@ svg {
     left: 0;
 
 }
+
+//pour calculer 472-472 * 0. pourcentage
+
 @keyframes circleHTML {
     100%{
         stroke-dashoffset: 141;
@@ -320,7 +329,7 @@ svg {
 }
 @keyframes circleGIT {
     100%{
-        stroke-dashoffset: 283;
+        stroke-dashoffset: 236;
     }
 }
 
@@ -359,12 +368,12 @@ svg {
     position: relative;
 
     .block_card {
-        height: 22vh;
-        width: 500px;
-        position: absolute;
-        text-align: center;
-        padding: 10px;
-        border-radius: 10px;
+        height:auto;
+        width:500px;
+        position:absolute;
+        text-align:center;
+        padding:10px;
+        border-radius:10px
     
     }
 
@@ -416,15 +425,19 @@ svg {
 
 #container_parcours{
     position: relative;
+    height: 100vh;
+    margin-bottom: 75px;
 
-    aside#aside_parcours{
+    aside #aside_parcours{
         position: absolute;
-        bottom: -937px;
-        right: 50%;
-        transform: translate(50%);
-
+        bottom: -30px;
+        transform: translate(-50%);
+        left: 50%;
     }
 }
+
+    
+
 
 
 
@@ -533,6 +546,9 @@ article#article_main {
 /* -----------FOOTER----------- */
 
 footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
     border-top: 3px solid #121212;
 
     p {
@@ -546,11 +562,6 @@ footer {
         margin-top: 20px;
         margin-right: 150px;
     }
-}
-#footer_main {
-    position: absolute;
-    bottom: -3050px;
-    width: 100%;
 }
 
 /* -----------RESPONSIVE DESIGN----------- */
@@ -590,7 +601,11 @@ footer {
     article#article_competence {
 
         display: grid;
-        grid-template-columns: 100px;
+        grid-template-columns: 443px;
+    }
+
+    div.skill {
+        margin-left: 25px;
     }
 
     /* -----------PARCOURS => RESPONSIVE ----------- */
@@ -605,39 +620,28 @@ footer {
             justify-content: center;
             
             .block_card {
-                margin: auto;
+                margin-left: 50%;
+                height: 24vh;
             }
         
             #block_card_2 {
-                top: 243px;
+                top: 280px;
             }
         
             #block_card_3 {
-                top: 487px;
+                top: 560px;
             }
         }
 
     }
 
-    #aside_parcours {
-       bottom: -880px!important;
-    }
-
-        
-    
-
-    /* -----------FOOTER => RESPONSIVE ----------- */
-
-
-    footer#footer_main {
-        bottom: -3333px;
-    }
+   
 
     
   }
         /* -----------SMALL----------- */
 
-  @media screen and (max-width: 743px) {
+  @media screen and (max-width: 775px) {
 
     /* -----------CONTAINER_MAIN => RESPONSIVE ----------- */
 
@@ -650,6 +654,12 @@ footer {
         }
     }
 
+    /* -----------CREATION => RESPONSIVE ----------- */
+
+    #creation {
+        height: 110vh;
+    }
+
      /* -----------COMPETENCE => RESPONSIVE ----------- */
 
 
@@ -660,7 +670,7 @@ footer {
   }
 
   #competence{
-    height: 120vh;
+    height: 130vh;
 
     aside {
 
@@ -679,21 +689,127 @@ footer {
     margin-top: 50px;
 }
 
-/* -----------COMPETENCE => RESPONSIVE ----------- */
+/* -----------PARCOURS => RESPONSIVE ----------- */
 
 #container_parcours {
 
     height: 100vh;
+  
+}
 
-    aside#aside_parcours {
-    
-        bottom: 50px!important;
+  }
+
+
+  @media screen and (max-width: 640px) {
+
+    article#article_main ul {
+        margin: 0;
+        font-size: 1rem;
+
+        a {
+            font-size: 1rem;
+        }
+        #list_contact {
+            margin-right: 10px;
+        }
+
+        
     }
-    
-}
-footer#footer_main {
-    bottom: -3590px;
-}
+
+    article.article_margin {
+        margin: 0 50%;
+    }
+
+    #portfolio_main {
+        margin-left: -25%;
+       
+    }
+
+    .blocks_creation {
+        height: 200px;
+        width: 300px;
+        margin-left: -40%;
+    }
+
+    #principale {
+        width: 15%;
+
+        div.skill {
+            margin-left: -5px;
+          }
+      }
+
+      #experiences{
+
+          .block_card {
+            width: 300px;
+            margin-left: 39px!important;
+
+            img {
+                display: none;
+            }
+           
+          }
+      }
+
+ 
+
+
+      footer {
+         .footer_reseau {
+            justify-content: center;
+         }
+      }
+
+  }
+
+  @media screen and (max-width: 400px) {
+
+   #creation {
+    height: 118vh;
+
+    .blocks_creation{
+
+        margin-left: -50%;
+    }
+
+   }
+
+   
+   #competence {
+       height: 140vh;
+       
+       article.article_margin {
+            margin: 0 42%;
+       }
+   }
+
+   #experiences {
+
+    margin-left: -10%;
+
+    .block_card {
+
+        height: 30vh;
+    }
+   }
+
+   #container_parcours {
+
+    #block_card_2 {
+        top: 225px!important;
+    }
+
+    #block_card_3 {
+        top: 450px!important;
+    }
+
+
+    aside #aside_parcours {
+     bottom: -50px;
+    }
+   }
+
 
 
 
