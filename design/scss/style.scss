@@ -126,6 +126,7 @@ header {
 
 #creation {
     height: 100vh;
+    margin: 0px 150px;
     text-align: center;
     overflow: hidden;
 
@@ -144,6 +145,7 @@ header {
     
         .blocks_creation {
             position: relative;
+            margin: 0 auto;
             transition: all .3s;
             color: #121212;
             text-shadow: 0 0 15px #F5F5F5;
@@ -438,11 +440,6 @@ svg {
 
     
 
-
-
-
-
-
 /* -----------TEMPLATE----------- */
 
 
@@ -517,7 +514,7 @@ article#article_main {
 
 
 #presentation_template {
-    height: 50vh;
+    height: 60vh;
     text-align: center;
 
     p {
@@ -592,7 +589,13 @@ footer {
     }
 
     #creation {
-        height: 130vh;
+        height: 143vh;
+        margin: 0;
+
+        .blocks_creation {
+            height: 300px;
+            width: 600px;
+        }
     }
 
     
@@ -601,7 +604,7 @@ footer {
     article#article_competence {
 
         display: grid;
-        grid-template-columns: 443px;
+        grid-template-columns: 90%;
     }
 
     div.skill {
@@ -609,6 +612,10 @@ footer {
     }
 
     /* -----------PARCOURS => RESPONSIVE ----------- */
+
+    #container_parcours {
+        height: 108vh;
+    }
 
     
     #vertical-line {
@@ -657,7 +664,14 @@ footer {
     /* -----------CREATION => RESPONSIVE ----------- */
 
     #creation {
-        height: 110vh;
+        height: 120vh;
+        .blocks_creation {
+            height: 200px;
+            width: 300px;
+            margin-left: 18%;
+        }
+
+        
     }
 
      /* -----------COMPETENCE => RESPONSIVE ----------- */
@@ -670,7 +684,7 @@ footer {
   }
 
   #competence{
-    height: 130vh;
+    height: 133vh;
 
     aside {
 
@@ -693,7 +707,7 @@ footer {
 
 #container_parcours {
 
-    height: 100vh;
+    height: 108vh;
   
 }
 
@@ -720,10 +734,14 @@ footer {
         margin: 0 50%;
     }
 
-    #portfolio_main {
-        margin-left: -25%;
-       
+    #creation {
+        article.article_margin {
+            margin-left: 18%;
+        }
+        
     }
+    
+
 
     .blocks_creation {
         height: 200px;
@@ -737,6 +755,13 @@ footer {
         div.skill {
             margin-left: -5px;
           }
+      }
+
+      #competence {
+
+        article#article_competence {
+            grid-template-columns: unset;
+        }
       }
 
       #experiences{
@@ -768,9 +793,10 @@ footer {
    #creation {
     height: 118vh;
 
+    
     .blocks_creation{
 
-        margin-left: -50%;
+        margin-left: 50%;
     }
 
    }
