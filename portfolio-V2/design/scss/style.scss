@@ -169,7 +169,7 @@ img {
 // ---------- SKILLS PAGE ----------
 
 section#skills_block {
-    height: 105vh;
+    height: 107vh;
     background-color: $couleurPrincipal;
     color: $couleurSecondaire;
 
@@ -237,7 +237,7 @@ section#skills_block {
 // ---------- EXPERIENCE PAGE ----------
 
 section#experience_block {
-    height: 130vh;
+    height: 132vh;
 
     article.experience_cards{
         border: 1px solid $couleurPrincipal;
@@ -323,7 +323,8 @@ footer {
 }
 .article_template {
     margin: 10px;
-    height: 50vh;
+    height: 65vh;
+
 
     a {
         background: rgb(160, 31, 31);
