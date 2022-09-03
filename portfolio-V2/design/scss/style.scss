@@ -49,10 +49,7 @@ h3 {
 li {
     list-style-type: none;
 }
-span {
-    color: rgb(160, 31, 31);
-    font-size: 1.5rem;
-}
+
 img {
     max-width: 1024px;
 }
@@ -111,10 +108,15 @@ img {
         h1 {
             margin-bottom: 20px;
             font-size: 2rem;
+            position: relative;
         }
 
         p {
             margin-bottom: 15px;
+        }
+        span {
+            font-size: 1.5rem;
+            position: relative;
         }
 
         lottie-player {
@@ -237,7 +239,7 @@ section#skills_block {
 // ---------- EXPERIENCE PAGE ----------
 
 section#experience_block {
-    height: 132vh;
+    height: 140vh;
 
     article.experience_cards{
         border: 1px solid $couleurPrincipal;
@@ -342,6 +344,11 @@ footer {
     }
     p{
         margin-bottom: 50px;
+    }
+
+    span {
+        color: rgb(160, 31, 31);
+        font-size: 1.5rem;
     }
 }
 
