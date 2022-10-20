@@ -24,7 +24,10 @@
 
         <title>Portfolio | MIREMONT Damien</title>
     </head>
-    <body>
+    <body data-barba="wrapper">
+    
+            <div class="transition_page"></div>
+     
         <div id="principal_container">
             <div id="accueil_block">
                 <header>
@@ -32,9 +35,10 @@
                     <div id="header_link">
                         <a href="index.html">Accueil</a>
                         <a href="mail.php" target="_blank">Contactez-moi</a>
+                        <a href="projets/html/daily.html">fffff</a>
                     </div>
                 </header>
-                <main>
+                <main data-barba="container" data-barba-namespace="accueil">
                     <div>
                         <h1>Portfolio</h1>
                         <p><span>Développeur web junior</span> <span>actuellement en formation</span> <span>Développeur et Concepteur d'Application.</span></p>
@@ -53,7 +57,7 @@
 
                 <div id="projet_images_block">
                     <article class="img_projet">
-                        <a href="projets/html/daily.html" target="_blank">
+                        <a href="projets/html/daily.html">
                             <img  src="images/dailyFresh.webp" alt="image illustration de Daily fresh">
                         </a>
                     </article>
@@ -239,7 +243,9 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-        <script src="home.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/transition.js"></script>
     </body>
 </html>

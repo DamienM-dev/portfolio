@@ -3,7 +3,6 @@
 @import 'variable';
 @import 'heritages';
 
-//animation
 
 
 
@@ -389,6 +388,18 @@ footer {
 #daily-page {
     background: url('../../images/points.png'), center url('../../images/dailyFresh.webp');
     background-size: cover;
+    }
+
+
+    // ---------- ANIMATION BARBA ----------
+
+    .transition_page{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(90deg, $couleurPrincipal, $couleurSecondaire);
+        position: absolute;
+        left: -100%;
+        
     }
 
 
