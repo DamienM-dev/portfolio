@@ -375,7 +375,7 @@ footer {
 
 #simplyHome-page {
 
-    background: url('../../images/points.png'), center url('../../images/simplyHomeMain.webp');
+    background: url('../../images/points.png'), center url('../../images/shv2.png');
     background-size: cover;
     }
 
@@ -546,6 +546,19 @@ footer {
             }
         }
       }
+
+      div#projet_images_block {
+
+        article.img_projet{
+            width: 1000px!important;
+            height: 409px!important;
+
+            img {
+                height: 100%;
+            }
+
+        }
+    }
 
       // ---------- TEMPLATE PAGE ----------
       .article_template {
