@@ -57,6 +57,7 @@ img {
 
 .contact {
     margin-bottom: 30px;
+    padding-bottom: 50px;
 
 
     h4 {
@@ -170,7 +171,7 @@ img {
 // ---------- SKILLS PAGE ----------
 
 section#skills_block {
-    height: 107vh;
+    
     background-color: $couleurPrincipal;
     color: $couleurSecondaire;
 
@@ -184,6 +185,7 @@ section#skills_block {
         background-color: $couleurComplement;
         border-radius: 15px;
         width: 80%;
+        height: 80px;
         margin: 20px auto;
         transform: scale(1);
         transition: all .3s;
@@ -423,11 +425,16 @@ footer {
 
     section#skills_block {
 
-        height: 100vh;
+ 
 
         div#skills_articles {
             display: grid;
             grid-template-columns: 1fr 1fr;
+
+            h4 {
+                margin-bottom: 10px;
+                background-color: red;
+            }
 
             article {
                 height: 15vh;
