@@ -428,12 +428,16 @@ footer {
  
 
         div#skills_articles {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+
+            div.gridCompetences {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
 
             h4 {
                 margin-bottom: 10px;
-                background-color: red;
+               
             }
 
             article {
