@@ -1,16 +1,25 @@
+import Link from "next/link";
+
+const nom = "MIREMONT Damien";
+const accueil = "Accueil";
+const aproposConst = "A propos";
+
+
+
 export default function Header() {
     return (
         <header className="flex justify-between bg-primary text-secondary p-4">
-        <h2 className="self-center">MIREMONT Damien</h2>
+        <h2 className="self-center">{nom}</h2>
       
           <ul>
             <li>
-              Accueil
+              <Link href="/">{accueil}</Link>
             </li>
             <li>
-              A propos
+              <Link href="/aPropos">{aproposConst}</Link>
             </li>
-          </ul>    
+          </ul>
       </header>
     )
 }
+
