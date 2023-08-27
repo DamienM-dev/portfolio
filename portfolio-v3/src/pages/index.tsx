@@ -1,17 +1,13 @@
 import { MongoClient } from "mongodb";
-import Skill from "~/components/ui/skills/skills";
+import SkillArticle from "~/components/ui/skills/SkillArticle";
 import Main from "../components/ui/mainArticle/main";
 
 export default function Home(props) {
 
-  console.log(props.skills);
-
-
   return (
     <main className="p-4">
       <Main />
-      {props.skills.map(skill => <Skill skill={skill}/>)}
-      
+      <SkillArticle skills={props.skills} />
     </main>
   );
 }
@@ -31,7 +27,7 @@ export async function getStaticProps() {
   let client;
 
   try {
-    client = await MongoClient.connect('mongodb+srv://damienmiremont:opRVQru1pefQZljT@cluster0.3ptf8hw.mongodb.net/portfolioDB?retryWrites=true&w=majority');
+    client = await MongoClient.connect('mongodb+srv://damienmiremont:PrbX6iYPg2hiURNc@cluster0.3ptf8hw.mongodb.net/portfolioDB?retryWrites=true&w=majority');
     const db = client.db();
     skills = await db.collection('skills').find().toArray();
   } catch(error) {
