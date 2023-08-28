@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'khula_regularregular';
+    src: url('khula-regular-webfont.eot');
+    src: url('khula-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('khula-regular-webfont.woff2') format('woff2'),
+         url('khula-regular-webfont.woff') format('woff'),
+         url('khula-regular-webfont.ttf') format('truetype'),
+         url('khula-regular-webfont.svg#khula_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

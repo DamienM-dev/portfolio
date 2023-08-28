@@ -2,4 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'khula_regularregular';
+    src: url('/fonts/khula-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+    font-family: 'martelregular';
+    src: url('/fonts/martel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    
+}
+
+h1,h2,h3 {
+    font-family:'khula_regularregular',sans-serif;
+}
+p,li {
+    font-family:'martelregular', serif ;
+}
+
+
+#firstLottie {
+    width: 250px;
+    margin: auto;
+}
+#skillAnimationLottie {
+    width: 100px;
+    margin: auto;
+}

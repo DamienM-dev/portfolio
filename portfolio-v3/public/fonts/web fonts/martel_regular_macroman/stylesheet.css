@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'martelregular';
+    src: url('martel-regular-webfont.eot');
+    src: url('martel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('martel-regular-webfont.woff2') format('woff2'),
+         url('martel-regular-webfont.woff') format('woff'),
+         url('martel-regular-webfont.ttf') format('truetype'),
+         url('martel-regular-webfont.svg#martelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

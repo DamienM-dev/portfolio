@@ -18,7 +18,6 @@ export default function Main() {
       <div>
             <lottie-player
               id="firstLottie"
-              className="h-auto"
               ref={ref}
               autoplay
               loop
